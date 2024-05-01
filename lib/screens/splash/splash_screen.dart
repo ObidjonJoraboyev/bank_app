@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../data/local/storage_repo.dart';
 import '../../utils/size/size_utils.dart';
@@ -44,14 +45,9 @@ class _SplashScreenState extends State<SplashScreen> {
     width = MediaQuery.of(context).size.width;
     height = MediaQuery.of(context).size.height;
 
-    return const Scaffold(
-      body: Center(
-        child: Icon(
-          Icons.access_time_filled_outlined,
-          color: Colors.green,
-          size: 200,
-        ),
-      ),
+    return Scaffold(
+      backgroundColor: Color(0xff90CAF9),
+      body: Center(child: SvgPicture.asset("assets/icons/splash.svg")),
     );
   }
 }
