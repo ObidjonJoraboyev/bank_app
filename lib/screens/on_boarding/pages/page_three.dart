@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../utils/images/app_images.dart';
 import '../../../utils/styles/app_text_style.dart';
 
 class BoardingPageThree extends StatelessWidget {

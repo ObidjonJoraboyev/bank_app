@@ -46,7 +46,7 @@ class _SplashScreenState extends State<SplashScreen> {
     height = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      backgroundColor: Color(0xff90CAF9),
+      backgroundColor: const Color(0xff90CAF9),
       body: Center(child: SvgPicture.asset("assets/icons/splash.svg")),
     );
   }

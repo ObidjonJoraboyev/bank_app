@@ -1,6 +1,4 @@
 import 'package:bank_app/screens/tab/tab_box.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -58,7 +56,7 @@ class _AuthScreenState extends State<AuthScreen>
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               SvgPicture.asset(
