@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>177296665595-f71h0e49hd5dgpn7inm17qsdnabsrit4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.177296665595-f71h0e49hd5dgpn7inm17qsdnabsrit4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBgazt86p75A1ZufQn1QHcTkehIp454G9Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>177296665595</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>uz.bank.uzum.bankApp</string>
+	<key>PROJECT_ID</key>
+	<string>bank-project-d24dc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bank-project-d24dc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:177296665595:ios:e8a7b741f24d6db0cf795e</string>
+	<key>DATABASE_URL</key>
+	<string>https://bank-project-d24dc-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "177296665595",
+    "firebase_url": "https://bank-project-d24dc-default-rtdb.firebaseio.com",
+    "project_id": "bank-project-d24dc",
+    "storage_bucket": "bank-project-d24dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177296665595:android:9350a8a8fac6399bcf795e",
+        "android_client_info": {
+          "package_name": "uz.bank.uzum.bank_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177296665595-1oje28nkuq8tsf5olie2arcc8bf0kb8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZaki7QUfcC-QJjUKCoscjmNw_sww85s8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177296665595-1oje28nkuq8tsf5olie2arcc8bf0kb8s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "177296665595-f71h0e49hd5dgpn7inm17qsdnabsrit4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "uz.bank.uzum.bankApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
