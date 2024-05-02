@@ -2,17 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class UniversalTextField extends StatefulWidget {
-  UniversalTextField(
-      {super.key,
-      required this.hinText,
-      this.svgPath = "",
-      this.isPassword = false,
-      required this.width,
-      required this.controller});
+  const UniversalTextField({
+    super.key,
+    required this.hinText,
+    this.svgPath = "",
+    this.isPassword = false,
+    required this.width,
+    required this.controller,
+  });
 
   final String hinText;
   final String svgPath;
-  bool isPassword;
+  final bool isPassword;
   final double width;
   final TextEditingController controller;
 
@@ -25,7 +26,6 @@ class _UniversalTextFieldState extends State<UniversalTextField> {
 
   @override
   void initState() {
-    // TODO: implement initState
     check = widget.isPassword;
 
     super.initState();
@@ -50,37 +50,39 @@ class _UniversalTextFieldState extends State<UniversalTextField> {
         obscureText: check,
         cursorColor: const Color(0xff1317DD),
         decoration: InputDecoration(
-            hintText: widget.hinText,
-            contentPadding: const EdgeInsets.symmetric(vertical: 16),
-            prefixIcon: widget.svgPath.isNotEmpty
-                ? Padding(
-                    padding: EdgeInsets.all(widget.width),
-                    child: SvgPicture.asset(
-                      widget.svgPath,
+          hintText: widget.hinText,
+          contentPadding: const EdgeInsets.symmetric(vertical: 16),
+          prefixIcon: widget.svgPath.isNotEmpty
+              ? Padding(
+                  padding: EdgeInsets.all(widget.width),
+                  child: SvgPicture.asset(
+                    widget.svgPath,
+                  ),
+                )
+              : null,
+          suffixIcon: widget.isPassword
+              ? Padding(
+                  padding: const EdgeInsets.all(0),
+                  child: IconButton(
+                    onPressed: () {
+                      check = !check;
+                      setState(() {});
+                    },
+                    icon: SvgPicture.asset(
+                      "assets/icons/eye.svg",
+                      width: 22,
                     ),
-                  )
-                : null,
-            suffixIcon: widget.isPassword
-                ? Padding(
-                    padding: const EdgeInsets.all(0),
-                    child: IconButton(
-                      onPressed: () {
-                        check = !check;
-                        setState(() {});
-                      },
-                      icon: SvgPicture.asset(
-                        "assets/icons/eye.svg",
-                        width: 22,
-                      ),
-                    ),
-                  )
-                : null,
-            enabledBorder: OutlineInputBorder(
-                borderSide: const BorderSide(color: Colors.white),
-                borderRadius: BorderRadius.circular(16)),
-            focusedBorder: OutlineInputBorder(
-                borderSide: const BorderSide(color: Colors.white),
-                borderRadius: BorderRadius.circular(16))),
+                  ),
+                )
+              : null,
+          enabledBorder: OutlineInputBorder(
+              borderSide: const BorderSide(color: Colors.white),
+              borderRadius: BorderRadius.circular(16)),
+          focusedBorder: OutlineInputBorder(
+            borderSide: const BorderSide(color: Colors.white),
+            borderRadius: BorderRadius.circular(16),
+          ),
+        ),
       ),
     );
   }
