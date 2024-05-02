@@ -32,11 +32,11 @@ class _AuthScreenState extends State<AuthScreen>
         AnimationController(vsync: this, duration: const Duration(seconds: 1));
 
     colorAnimation =
-    ColorTween(begin: Colors.white, end: Colors.white.withOpacity(.01))
-        .animate(animationController)
-      ..addListener(() {
-        setState(() {});
-      });
+        ColorTween(begin: Colors.white, end: Colors.white.withOpacity(.01))
+            .animate(animationController)
+          ..addListener(() {
+            setState(() {});
+          });
 
     super.initState();
   }

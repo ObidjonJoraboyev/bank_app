@@ -17,11 +17,13 @@ class AuthRepository {
       return NetworkResponse(data: "success");
     } on FirebaseAuthException catch (e) {
       return NetworkResponse(
-          errorText: LogInWithEmailAndPasswordFailure.fromCode(e.code).message, errorCode: e.code);
+          errorText: LogInWithEmailAndPasswordFailure.fromCode(e.code).message,
+          errorCode: e.code);
     } catch (_) {
       return NetworkResponse(errorText: "An unknown exception occurred");
     }
   }
+
   Future<NetworkResponse> registerWithEmailAndPassword({
     required String email,
     required String password,
@@ -34,37 +36,38 @@ class AuthRepository {
       return NetworkResponse(data: "success");
     } on FirebaseAuthException catch (e) {
       return NetworkResponse(
-          errorText: SignUpWithEmailAndPasswordFailure.fromCode(e.code).message, errorCode: e.code);
+          errorText: SignUpWithEmailAndPasswordFailure.fromCode(e.code).message,
+          errorCode: e.code);
     } catch (_) {
       return NetworkResponse(errorText: "An unknown exception occurred");
     }
   }
+
   Future<NetworkResponse> logOutUser() async {
     try {
-      await FirebaseAuth.instance.signOut(
-      );
+      await FirebaseAuth.instance.signOut();
       return NetworkResponse(data: "success");
     } on FirebaseAuthException catch (e) {
-      return NetworkResponse(
-          errorText: "Error logOut $e");
+      return NetworkResponse(errorText: "Error logOut $e");
     } catch (_) {
       return NetworkResponse(errorText: "An unknown exception occurred");
     }
   }
+
   Future<NetworkResponse> googleSignIn() async {
     try {
       late final AuthCredential credential;
       final googleUser = await GoogleSignIn().signIn();
-      final googleAuth =  await googleUser!.authentication;
-      credential  = GoogleAuthProvider.credential(
-          accessToken: googleAuth.accessToken,
-          idToken: googleAuth.idToken
-      );
-      UserCredential userCredential  =  await FirebaseAuth.instance.signInWithCredential(credential);
+      final googleAuth = await googleUser!.authentication;
+      credential = GoogleAuthProvider.credential(
+          accessToken: googleAuth.accessToken, idToken: googleAuth.idToken);
+      UserCredential userCredential =
+          await FirebaseAuth.instance.signInWithCredential(credential);
       return NetworkResponse(data: userCredential);
     } on FirebaseAuthException catch (e) {
       return NetworkResponse(
-          errorText: LogInWithEmailAndPasswordFailure.fromCode(e.code).message, errorCode: e.code);
+          errorText: LogInWithEmailAndPasswordFailure.fromCode(e.code).message,
+          errorCode: e.code);
     } catch (_) {
       return NetworkResponse(errorText: "An unknown exception occurred");
     }

@@ -2,7 +2,6 @@ import 'package:equatable/equatable.dart';
 
 import '../../data/models/user_model.dart';
 
-
 abstract class AuthEvent extends Equatable {}
 
 class CheckAuthenticationEvent extends AuthEvent {
@@ -31,6 +30,7 @@ class RegisterUserEvent extends AuthEvent {
   @override
   List<Object?> get props => [userModel];
 }
+
 class LogoutUserEvent extends AuthEvent {
   final UserModel userModel;
   LogoutUserEvent({
@@ -39,6 +39,7 @@ class LogoutUserEvent extends AuthEvent {
   @override
   List<Object?> get props => [userModel];
 }
+
 class SignInWithGoogleEvent extends AuthEvent {
   @override
   List<Object?> get props => [];

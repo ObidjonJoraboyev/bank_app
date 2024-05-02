@@ -2,7 +2,6 @@ import 'package:equatable/equatable.dart';
 
 import '../../data/forms/form_status.dart';
 
-
 class AuthState extends Equatable {
   final String errorMessage;
   final String statusMessage;
@@ -27,8 +26,8 @@ class AuthState extends Equatable {
 
   @override
   List<Object?> get props => [
-    status,
-    statusMessage,
-    errorMessage,
-  ];
+        status,
+        statusMessage,
+        errorMessage,
+      ];
 }

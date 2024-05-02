@@ -1,4 +1,3 @@
-
 class UserModel {
   final String username;
   final String lastname;
@@ -52,13 +51,21 @@ class UserModel {
   Map<String, dynamic> toJson() {
     return {
       "username": username,
-      "lastname" : lastname,
-      "password" : password,
-      "email" : email,
-      "imageUrl" : imageUrl,
-      "phoneNumber" : phoneNumber,
-      "userId" : userId
+      "lastname": lastname,
+      "password": password,
+      "email": email,
+      "imageUrl": imageUrl,
+      "phoneNumber": phoneNumber,
+      "userId": userId
     };
   }
-  static UserModel initial()=>UserModel(username: "", lastname: "", password: "", email: "", imageUrl: "", phoneNumber: "", userId: "");
+
+  static UserModel initial() => UserModel(
+      username: "",
+      lastname: "",
+      password: "",
+      email: "",
+      imageUrl: "",
+      phoneNumber: "",
+      userId: "");
 }

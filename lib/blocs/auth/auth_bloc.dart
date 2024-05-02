@@ -10,12 +10,12 @@ import 'auth_state.dart';
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   AuthBloc({required this.authRepository})
       : super(
-    const AuthState(
-      status: FormStatus.pure,
-      errorMessage: "",
-      statusMessage: "",
-    ),
-  ) {
+          const AuthState(
+            status: FormStatus.pure,
+            errorMessage: "",
+            statusMessage: "",
+          ),
+        ) {
     on<CheckAuthenticationEvent>(_checkAuthentication);
     on<LoginUserEvent>(_loginUser);
     on<RegisterUserEvent>(_registerUser);
@@ -37,7 +37,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   }
 
   _loginUser(LoginUserEvent event, emit) async {
-    NetworkResponse networkResponse = await authRepository.loginWithEmailAndPassword(
+    NetworkResponse networkResponse =
+        await authRepository.loginWithEmailAndPassword(
       email: "${event.userName}@gmail.com",
       password: event.password,
     );
@@ -55,7 +56,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   }
 
   _registerUser(RegisterUserEvent event, emit) async {
-    NetworkResponse networkResponse = await authRepository.registerWithEmailAndPassword(
+    NetworkResponse networkResponse =
+        await authRepository.registerWithEmailAndPassword(
       email: "${event.userModel.username}@gmail.com",
       password: event.userModel.password,
     );
