@@ -1,10 +1,10 @@
-import 'package:banking_app/blocs/user_profile/user_profile_bloc.dart';
-import 'package:banking_app/blocs/user_profile/user_profile_event.dart';
-import 'package:banking_app/blocs/user_profile/user_profile_state.dart';
-import 'package:banking_app/data/models/user_model.dart';
-import 'package:banking_app/screens/tab_box/profile/update/widgets/textfield_items.dart';
-import 'package:banking_app/utils/app_colors.dart';
-import 'package:banking_app/utils/size_utils.dart';
+import 'package:bank_app/blocs/user_profile/user_profile_bloc.dart';
+import 'package:bank_app/blocs/user_profile/user_profile_event.dart';
+import 'package:bank_app/blocs/user_profile/user_profile_state.dart';
+import 'package:bank_app/data/models/user_model.dart';
+import 'package:bank_app/screens/tab_box/profile/update/widgets/textfield_items.dart';
+import 'package:bank_app/utils/app_colors.dart';
+import 'package:bank_app/utils/size_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

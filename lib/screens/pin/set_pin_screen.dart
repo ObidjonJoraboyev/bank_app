@@ -1,6 +1,6 @@
-import 'package:banking_app/screens/pin/cubit/password_cubit.dart';
-import 'package:banking_app/screens/pin/cubit/password_state.dart';
-import 'package:banking_app/utils/size_utils.dart';
+import 'package:bank_app/screens/pin/cubit/password_cubit.dart';
+import 'package:bank_app/screens/pin/cubit/password_state.dart';
+import 'package:bank_app/utils/size_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

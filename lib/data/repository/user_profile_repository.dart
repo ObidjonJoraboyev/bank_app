@@ -1,5 +1,5 @@
-import 'package:banking_app/data/models/network_response.dart';
-import 'package:banking_app/data/models/user_model.dart';
+import 'package:bank_app/data/models/network_response.dart';
+import 'package:bank_app/data/models/user_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 

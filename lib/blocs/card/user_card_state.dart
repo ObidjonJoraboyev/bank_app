@@ -1,5 +1,5 @@
-import 'package:banking_app/blocs/auth/auth_state.dart';
-import 'package:banking_app/data/models/card_model.dart';
+import 'package:bank_app/blocs/auth/auth_state.dart';
+import 'package:bank_app/data/models/card_model.dart';
 import 'package:equatable/equatable.dart';
 
 class UserCardsState extends Equatable {

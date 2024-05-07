@@ -1,9 +1,9 @@
-import 'package:banking_app/blocs/auth/auth_state.dart';
-import 'package:banking_app/blocs/card/user_card_event.dart';
-import 'package:banking_app/blocs/card/user_card_state.dart';
-import 'package:banking_app/data/models/card_model.dart';
-import 'package:banking_app/data/models/network_response.dart';
-import 'package:banking_app/data/repository/card_repository.dart';
+import 'package:bank_app/blocs/auth/auth_state.dart';
+import 'package:bank_app/blocs/card/user_card_event.dart';
+import 'package:bank_app/blocs/card/user_card_state.dart';
+import 'package:bank_app/data/models/card_model.dart';
+import 'package:bank_app/data/models/network_response.dart';
+import 'package:bank_app/data/repository/card_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class UserCardsBloc extends Bloc<UserCardsEvent, UserCardsState> {

@@ -1,7 +1,7 @@
-import 'package:banking_app/utils/app_colors.dart';
-import 'package:banking_app/utils/app_constants.dart';
-import 'package:banking_app/utils/app_images.dart';
-import 'package:banking_app/utils/size_utils.dart';
+import 'package:bank_app/utils/app_colors.dart';
+import 'package:bank_app/utils/app_constants.dart';
+import 'package:bank_app/utils/app_images.dart';
+import 'package:bank_app/utils/size_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

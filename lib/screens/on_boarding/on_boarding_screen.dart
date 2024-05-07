@@ -1,8 +1,8 @@
-import 'package:banking_app/data/local/storage_repository.dart';
-import 'package:banking_app/screens/auth/register/register_screen.dart';
-import 'package:banking_app/screens/on_boarding/widgets/on_boarding_items.dart';
-import 'package:banking_app/utils/app_colors.dart';
-import 'package:banking_app/utils/size_utils.dart';
+import 'package:bank_app/data/local/storage_repository.dart';
+import 'package:bank_app/screens/auth/register/register_screen.dart';
+import 'package:bank_app/screens/on_boarding/widgets/on_boarding_items.dart';
+import 'package:bank_app/utils/app_colors.dart';
+import 'package:bank_app/utils/size_utils.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingScreen extends StatefulWidget {

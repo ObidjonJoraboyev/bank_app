@@ -1,4 +1,4 @@
-import 'package:banking_app/data/models/user_model.dart';
+import 'package:bank_app/data/models/user_model.dart';
 import 'package:equatable/equatable.dart';
 
 abstract class AuthEvent extends Equatable {

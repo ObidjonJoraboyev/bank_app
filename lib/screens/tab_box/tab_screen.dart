@@ -1,9 +1,9 @@
-import 'package:banking_app/screens/tab_box/card/card_screen.dart';
-import 'package:banking_app/screens/tab_box/history/history_screen.dart';
-import 'package:banking_app/screens/tab_box/home/home_screen.dart';
-import 'package:banking_app/screens/tab_box/profile/profile_screen.dart';
-import 'package:banking_app/screens/tab_box/tab_cubit.dart';
-import 'package:banking_app/utils/size_utils.dart';
+import 'package:bank_app/screens/tab_box/card/card_screen.dart';
+import 'package:bank_app/screens/tab_box/history/history_screen.dart';
+import 'package:bank_app/screens/tab_box/home/home_screen.dart';
+import 'package:bank_app/screens/tab_box/profile/profile_screen.dart';
+import 'package:bank_app/screens/tab_box/tab_cubit.dart';
+import 'package:bank_app/utils/size_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

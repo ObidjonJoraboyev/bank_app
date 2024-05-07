@@ -1,11 +1,11 @@
-import 'package:banking_app/blocs/card/user_card_bloc.dart';
-import 'package:banking_app/blocs/card/user_card_event.dart';
-import 'package:banking_app/blocs/card/user_card_state.dart';
-import 'package:banking_app/data/models/card_model.dart';
-import 'package:banking_app/screens/tab_box/profile/update/widgets/textfield_items.dart';
-import 'package:banking_app/utils/app_colors.dart';
-import 'package:banking_app/utils/formatters.dart';
-import 'package:banking_app/utils/size_utils.dart';
+import 'package:bank_app/blocs/card/user_card_bloc.dart';
+import 'package:bank_app/blocs/card/user_card_event.dart';
+import 'package:bank_app/blocs/card/user_card_state.dart';
+import 'package:bank_app/data/models/card_model.dart';
+import 'package:bank_app/screens/tab_box/profile/update/widgets/textfield_items.dart';
+import 'package:bank_app/utils/app_colors.dart';
+import 'package:bank_app/utils/formatters.dart';
+import 'package:bank_app/utils/size_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

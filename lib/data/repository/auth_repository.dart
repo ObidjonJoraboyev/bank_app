@@ -1,5 +1,5 @@
-import 'package:banking_app/data/models/network_response.dart';
-import 'package:banking_app/firebase%20_eception/firebase_exception.dart';
+import 'package:bank_app/data/models/network_response.dart';
+import 'package:bank_app/firebase%20_eception/firebase_exception.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 

@@ -1,5 +1,5 @@
-import 'package:banking_app/utils/app_colors.dart';
-import 'package:banking_app/utils/size_utils.dart';
+import 'package:bank_app/utils/app_colors.dart';
+import 'package:bank_app/utils/size_utils.dart';
 import 'package:flutter/material.dart';
 
 class ButtonItems extends StatelessWidget {

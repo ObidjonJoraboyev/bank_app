@@ -1,4 +1,4 @@
-import 'package:banking_app/data/models/card_model.dart';
+import 'package:bank_app/data/models/card_model.dart';
 import 'package:equatable/equatable.dart';
 
 abstract class UserCardsEvent extends Equatable {}

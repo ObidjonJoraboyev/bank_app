@@ -1,9 +1,9 @@
-import 'package:banking_app/screens/auth/register/register_screen.dart';
-import 'package:banking_app/screens/on_boarding/on_boarding_screen.dart';
-import 'package:banking_app/screens/payment/payment_screen.dart';
-import 'package:banking_app/screens/splash/splash_screen.dart';
-import 'package:banking_app/screens/tab_box/tab_screen.dart';
-import 'package:banking_app/screens/transfer/transfer_screen.dart';
+import 'package:bank_app/screens/splash/splash_screen.dart';
+import 'package:bank_app/screens/tab_box/tab_screen.dart';
+import 'package:bank_app/screens/auth/register/register_screen.dart';
+import 'package:bank_app/screens/on_boarding/on_boarding_screen.dart';
+import 'package:bank_app/screens/payment/payment_screen.dart';
+import 'package:bank_app/screens/transfer/transfer_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'no_internet/no_internet_screen.dart';
